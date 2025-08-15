@@ -69,3 +69,27 @@ Based on completed exercise 05 (Debugging FP), key debugging approaches:
 - Fix and test one step at a time
 - Verify each transformation works before proceeding
 - Apply this methodology to AI agent pipelines and multi-step processing
+
+## Advanced Debugging Patterns (Lesson 07)
+
+Based on completed exercise 07 (Functions Practice - hex-to-RGB), advanced validation and type safety:
+
+### Two-Stage Validation Pattern
+- **Stage 1**: Check type safety before operations that could crash
+- **Stage 2**: Validate content only after type is confirmed
+- Example: Check `isinstance(input, str)` before calling `len(input)`
+
+### Type Safety in Input Validation
+- Operations like `len()`, string slicing can crash on wrong types
+- Always validate input type before performing type-specific operations
+- Separate checks prevent wrong exception types and messages
+
+### Exception Message Consistency
+- Match expected test error messages exactly
+- `TypeError` from `len(integer)` vs custom `"not a hex color string"`
+- Two-stage validation ensures consistent error handling
+
+### Number Base Conversion Debugging
+- Common bug: `int(hex_string, 10)` vs `int(hex_string, 16)`
+- Use strategic print debugging to identify base parameter errors
+- String slicing patterns: `hex_color[0:2]`, `hex_color[2:4]`, `hex_color[4:6]`

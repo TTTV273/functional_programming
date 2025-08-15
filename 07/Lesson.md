@@ -142,3 +142,95 @@ When debugging the provided function:
 5. **Test error conditions** - ensure exceptions are raised properly
 
 This debugging process mirrors the systematic approach used in AI development - when your models produce unexpected outputs, you trace through each transformation step to identify where the logic fails.
+
+---
+
+## Advanced Debugging: Two-Stage Validation Explained
+
+### The Core Problem: Type Safety in Validation
+
+When implementing the `hex_to_rgb` function, a critical issue emerges: **you cannot call `len()` on non-string types**. This creates a fundamental challenge in input validation.
+
+### Why Single-Stage Validation Fails
+
+**Problematic approach:**
+```python
+# This WILL crash on certain inputs!
+if not isinstance(hex_color, str) or not is_hexadecimal(hex_color) or len(hex_color) != 6:
+    raise Exception("not a hex color string")
+```
+
+**What happens with `hex_color = 1000000` (integer):**
+1. `isinstance(1000000, str)` → `False`
+2. `not False` → `True`
+3. Python evaluates the entire condition and calls `len(1000000)`
+4. **Result:** `TypeError: object of type 'int' has no len()`
+
+**The problem:** Even though the first condition is `True`, Python still evaluates `len(hex_color)`, causing a crash with the wrong exception type and message.
+
+### The Two-Stage Solution
+
+**Safe approach with separated validation:**
+```python
+# Stage 1: Type safety check
+if not isinstance(hex_color, str):
+    raise Exception("not a hex color string")
+
+# Stage 2: String content validation (safe now!)
+if not is_hexadecimal(hex_color) or len(hex_color) != 6:
+    raise Exception("not a hex color string")
+```
+
+### Why Two Stages Work
+
+**Stage 1 - Type Safety:**
+- Purpose: "Is this even a string?"
+- Handles: integers, None, lists, etc.
+- Example: `1000000` → Not a string → Exception raised immediately
+
+**Stage 2 - Content Validation:**
+- Purpose: "Now that we know it's a string, is it valid hex?"
+- Safely calls: `len(hex_color)` and `is_hexadecimal(hex_color)`
+- Example: `"Hello!"` → Invalid hex → Exception raised
+
+### Alternative Valid Approaches
+
+**Option A (as implemented):**
+```python
+if not isinstance(hex_color, str):
+    raise Exception("not a hex color string")
+if not is_hexadecimal(hex_color) or len(hex_color) != 6:
+    raise Exception("not a hex color string")
+```
+
+**Option B (alternative grouping):**
+```python
+if not isinstance(hex_color, str) or not is_hexadecimal(hex_color):
+    raise Exception("not a hex color string")
+if len(hex_color) != 6:
+    raise Exception("not a hex color string")
+```
+
+Both approaches work because they ensure `len()` is never called on non-string types.
+
+### Exception Types vs Error Messages
+
+**Important distinction:**
+- `len(1000000)` **does raise an exception** (TypeError)
+- But it raises `"object of type 'int' has no len()"`
+- Our tests expect `"not a hex color string"`
+- **Wrong exception message = test failure**
+
+**The two-stage approach ensures:**
+1. ✅ No TypeError crashes
+2. ✅ Consistent exception message
+3. ✅ All test cases pass with expected error messages
+
+### Key Takeaway for Debugging
+
+**When validating input that could be different types:**
+1. **Check type first** - ensure safe operations
+2. **Then validate content** - only after type is confirmed
+3. **Maintain consistent error messages** - match expected test output
+
+This pattern applies broadly in software development: always validate that operations are safe to perform before performing them.
