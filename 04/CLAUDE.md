@@ -50,3 +50,22 @@ The testing framework follows a consistent pattern:
 2. Test with basic cases: `python -c "__RUN__ = True; exec(open('main_test.py').read())"`
 3. Test with full suite: `python main_test.py`
 4. Ensure all tests pass and inputs remain unmodified
+
+## Debugging Techniques (Lesson 05)
+
+Based on completed exercise 05 (Debugging FP), key debugging approaches:
+
+### Break Complex Chains
+- Avoid unreadable one-liners like `f(g(h(x)))`
+- Break into intermediate variables for each step
+- Use descriptive variable names (e.g., `stripped`, `capitalized`, `no_periods`)
+
+### Strategic Print Debugging
+- Add print statements between transformation steps
+- Use `print(f"|{variable}|")` to visualize hidden whitespace
+- Remove debug prints after bugs are fixed, keep readable structure
+
+### Incremental Development
+- Fix and test one step at a time
+- Verify each transformation works before proceeding
+- Apply this methodology to AI agent pipelines and multi-step processing
