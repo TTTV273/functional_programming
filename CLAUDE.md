@@ -234,11 +234,44 @@ Based on completed lesson with Python's built-in map function:
 - Chain multiple transformations using iterator composition
 - Direct iterator usage with string operations like `join()`
 
+### Filter Function (CH2-L6)
+Based on completed lesson with Python's built-in filter function:
+
+#### Built-in Filter Function Concept
+- Python's `filter(predicate, iterable)` selects elements where predicate returns True
+- Acts as "quality inspector" - only items passing the test get through
+- Returns iterator object for memory efficiency
+- Core functional programming tool alongside map and reduce
+
+#### Split → Filter → Join Pattern
+- **Split**: Break string into components with `.split("\n")`
+- **Filter**: Apply predicate function to select desired components
+- **Join**: Reassemble filtered components with `.join()` method
+- Essential pattern for selective text processing
+
+#### Lambda Predicate Functions
+- Use lambda functions as filter criteria: `lambda x: not x.startswith("-")`
+- Predicate must return boolean (True to keep, False to remove)
+- Enables inline filtering logic without separate function definitions
+- Combines filter concept with lambda function mastery
+
+#### Edge Case Handling in Text Processing
+- Consider empty lines and special characters in filtering logic
+- Preserve document structure including trailing newlines
+- Test with various input patterns to ensure robustness
+- Critical thinking about boundary conditions
+
+#### Functional Text Processing Applications
+- Document cleanup and content filtering
+- Removing unwanted lines or sections from text
+- Selective data extraction from structured text
+- Maintaining document formatting during processing
+
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
-- CH2-L4 introduces Python's built-in functional programming tools (map, filter, reduce trilogy)
+- CH2-L4 and L6 introduce Python's built-in functional programming tools (map, filter, reduce trilogy)
 - Some directories (06) contain only lesson content without implementations
 - `Lecture.md` provides Vietnamese language context on Python's limitations for functional programming
 - `learnlua.lua` file present but not part of main exercise structure
