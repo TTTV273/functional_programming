@@ -150,9 +150,95 @@ Based on completed Lambda Functions lesson:
 - Use nested loops with tuple unpacking for clean iteration
 - Safe lookups with `.get(key, default)` for missing keys
 
+### First Class and Higher Order Functions (CH2-L3)
+Based on completed lesson with full implementation and testing:
+
+#### First-Class Functions Definition
+- Functions treated like any other variable in Python
+- Can be assigned to variables, passed as arguments, returned from functions
+- Core principle: functions are values that can be manipulated like data
+- Example: `f = square` assigns function without calling it
+
+#### Higher-Order Functions Types
+- **Parameter Type**: Functions that accept other functions as arguments
+- **Return Type**: Functions that return other functions as results
+- **Both Types**: Functions can both take and return functions
+- Pattern enables composition and reusable transformation logic
+
+#### Apply Operation Pattern
+- Generic function that applies operation to each element in a list
+- Implementation: `apply_operation(operation, numbers)` with loop and append
+- Demonstrates function-as-parameter pattern
+- Equivalent to Python's built-in `map()` but with explicit implementation
+
+#### Function Factory Pattern
+- Functions that create and return other functions based on parameters
+- Dynamic function creation at runtime based on string inputs
+- Pattern: `create_math_operation("square")` returns `lambda x: x * x`
+- Enables configurable behavior and specialized function generation
+
+#### Lambda vs Named Functions Trade-offs
+- **Named Functions**: Clear names, reusable, memory efficient, debugger-friendly
+- **Lambda Functions**: Self-contained, meets exercise requirements, fresh instances
+- **Both Approaches**: Functionally equivalent, demonstrate same concepts
+- **Choice Factors**: Exercise requirements, debugging needs, code organization
+
+#### Function Composition Patterns
+- Combining function factories with apply operations
+- Example: `apply_operation(create_math_operation("square"), [1,2,3])`
+- Demonstrates full higher-order function ecosystem
+- Enables building complex operations from simple components
+
+#### Test Framework Design Principles
+- Proper routing logic for different test types
+- Check specific criteria before general conditions
+- Function type identification for correct test execution
+- Error handling and edge case coverage in test design
+
+### Map Function (CH2-L4)
+Based on completed lesson with Python's built-in map function:
+
+#### Built-in Map Function Concept
+- Python's `map(function, iterable)` applies function to each element in sequence
+- Returns iterator object (not list) for memory efficiency
+- Equivalent to custom `apply_operation` but optimized and built-in
+- Part of functional programming trilogy: map, filter, reduce
+
+#### Split → Map → Join Pattern
+- **Split**: Break string into components with `.split("\n")`
+- **Map**: Apply transformation function to each component
+- **Join**: Reassemble components with `.join()` method
+- Essential pattern for string/text processing in functional style
+
+#### Iterator vs List Handling
+- `map()` returns iterator object that can be consumed once
+- Use `list(map_object)` to convert to list when needed
+- `join()` can work directly with iterators (memory efficient)
+- Iterator exhaustion: second conversion returns empty result
+
+#### String Processing Applications
+- Line-by-line text transformations (bullet point conversion)
+- Document format standardization and cleanup
+- Batch text processing without manual loops
+- Preserving document structure and formatting
+
+#### Functional vs Imperative Comparison
+- **Imperative**: Manual loops with accumulator variables
+- **Functional**: Single expression with map and helper function
+- **Benefits**: Cleaner code, separation of concerns, reusability
+- **Pattern**: Transform logic separate from iteration mechanics
+
+#### Memory Efficiency Patterns
+- Map objects are lazy and memory-efficient
+- Process large datasets without loading entire result into memory
+- Chain multiple transformations using iterator composition
+- Direct iterator usage with string operations like `join()`
+
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1) and lesson materials
-- Some directories (06, CH2-L2) contain only lesson content without implementations
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4) and lesson materials
+- Complete Chapter 2: First-Class Functions with all lessons implemented and tested
+- CH2-L4 introduces Python's built-in functional programming tools (map, filter, reduce trilogy)
+- Some directories (06) contain only lesson content without implementations
 - `Lecture.md` provides Vietnamese language context on Python's limitations for functional programming
 - `learnlua.lua` file present but not part of main exercise structure
