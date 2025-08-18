@@ -267,11 +267,50 @@ Based on completed lesson with Python's built-in filter function:
 - Selective data extraction from structured text
 - Maintaining document formatting during processing
 
+### Reduce Function (CH2-L7)
+Based on completed lesson with Python's built-in reduce function:
+
+#### Built-in Reduce Function Concept
+- Python's `functools.reduce(function, iterable)` accumulates values into single result
+- Acts as "snowball effect" - starts small and grows by accumulating each element
+- Takes reducing function with two parameters: accumulator and next item
+- Core functional programming tool that completes the map-filter-reduce trilogy
+
+#### Accumulator Pattern Mastery
+- **First Element**: Used as initial accumulator value automatically
+- **Reducing Function**: Takes (accumulator, next_item) and returns new accumulator
+- **Step-by-Step Growth**: Each iteration builds on previous accumulated result
+- **Final Result**: Single value representing all elements combined
+
+#### Helper Function Design
+- Create simple combining functions like `join(doc_so_far, sentence)`
+- Focus on single-step transformation between accumulator and new item
+- Use clear parameter names that reflect accumulation pattern
+- Return new accumulated value for next iteration
+
+#### Edge Case Handling Excellence
+- Empty inputs: Check for n=0 conditions before reduce operations
+- Single item lists: Reduce handles gracefully (returns the single item)
+- Boundary conditions: Use list slicing for partial processing
+- Error prevention: Validate inputs before applying reduce
+
+#### Debug-Driven Development
+- Strategic print statements to visualize accumulator growth
+- Understanding reduce execution flow through step-by-step observation
+- Syntax precision: Identifying and correcting formatting issues
+- Clean debugging that enhances learning without cluttering final code
+
+#### Functional Programming Trilogy Completion
+- **Map**: Transform all elements (one-to-one)
+- **Filter**: Select some elements (many-to-fewer)  
+- **Reduce**: Accumulate to single result (many-to-one)
+- **Combined Power**: Chain operations for complex data processing
+
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
-- CH2-L4 and L6 introduce Python's built-in functional programming tools (map, filter, reduce trilogy)
+- CH2-L4, L6, and L7 complete Python's built-in functional programming trilogy (map, filter, reduce)
 - Some directories (06) contain only lesson content without implementations
 - `Lecture.md` provides Vietnamese language context on Python's limitations for functional programming
 - `learnlua.lua` file present but not part of main exercise structure
