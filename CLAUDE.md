@@ -306,11 +306,54 @@ Based on completed lesson with Python's built-in reduce function:
 - **Reduce**: Accumulate to single result (many-to-one)
 - **Combined Power**: Chain operations for complex data processing
 
+### Reduce Practice Mastery (L7-Reduce-Practice)
+Based on comprehensive hands-on practice with 5 progressive exercises:
+
+#### Advanced Accumulator Patterns
+- **Numbers**: `reduce(add, numbers)` - Basic accumulation without starting value
+- **Comparison**: `reduce(max_func, numbers)` - Finding extremes through comparison
+- **Dictionaries**: `reduce(count_func, words, {})` - Building complex data structures
+- **Lists**: `reduce(flatten_func, lists, [])` - Combining nested structures
+- **Conditional Strings**: `reduce(url_func, parts)` - Complex formatting with edge cases
+
+#### Starting Value Decision Matrix
+- **Same Type Accumulation**: No starting value needed (numbers, comparison)
+- **Different Type Accumulation**: Starting value required (dict from strings, list from sublists)
+- **First Element as Base**: Natural when first element serves as foundation (URL building)
+- **Empty Container Start**: Required when building from scratch (counting, flattening)
+
+#### Debug-Driven Reduce Development
+- Strategic print statements to visualize accumulator growth
+- Step-by-step observation of "snowball effect" across data types
+- Understanding reduce execution flow through hands-on experimentation
+- Iterative refinement based on test feedback and edge case discovery
+
+#### Edge Case Handling Excellence
+- Empty inputs and single-element lists
+- String formatting with trailing/leading characters
+- Conditional logic within accumulator functions
+- Type-specific operations (dict updates, list concatenation, string manipulation)
+
+#### Real-World Application Patterns
+- **Word Frequency Counting**: Dictionary accumulation for text analysis
+- **Data Flattening**: List processing for nested structure normalization
+- **URL Construction**: String building with formatting rules and validation
+- **Statistical Operations**: Numerical accumulation for data aggregation
+- **Comparative Analysis**: Finding extremes and optimal values
+
+#### Practice Achievement Metrics
+- 25/25 tests passed across all 5 exercises
+- Perfect implementation of 5 different accumulator patterns
+- Mastery of both starting value and first-element patterns
+- Advanced string processing with conditional logic
+- Complete functional programming trilogy understanding
+
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
 - CH2-L4, L6, and L7 complete Python's built-in functional programming trilogy (map, filter, reduce)
+- L7-Reduce-Practice provides comprehensive hands-on practice with 5 progressive reduce exercises (25/25 tests passed)
 - Some directories (06) contain only lesson content without implementations
 - `Lecture.md` provides Vietnamese language context on Python's limitations for functional programming
 - `learnlua.lua` file present but not part of main exercise structure
