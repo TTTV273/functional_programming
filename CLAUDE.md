@@ -348,12 +348,114 @@ Based on comprehensive hands-on practice with 5 progressive exercises:
 - Advanced string processing with conditional logic
 - Complete functional programming trilogy understanding
 
+### Map, Filter, and Reduce Review (CH2-L8)
+Based on completed advanced lesson comparing imperative vs functional paradigms:
+
+#### Imperative vs Functional Programming Comparison
+- **Imperative Approach**: Step-by-step procedures with mutable state and explicit loops
+- **Functional Approach**: Declarative transformations with immutable data and function composition
+- **Factorial Example**: Traditional loop vs `functools.reduce(lambda x, y: x * y, range(1, n + 1))`
+- **Key Insight**: Functional code expresses WHAT you want, imperative shows HOW to do it
+
+#### Advanced Function Composition Mastery
+- **filter→map→reduce Pipeline**: Chain multiple operations elegantly without intermediate variables
+- **Real Estate Contract Analysis**: Practical application with actual business data
+- **calculate_total_rental_revenue()**: Perfect pipeline filtering active rentals, mapping to values, reducing to sum
+- **get_high_value_sales()**: Advanced filtering with short-circuit evaluation and type safety
+
+#### Multi-Metric Data Analysis Patterns
+- **create_contract_summary()**: Four different metrics calculated functionally in single operation
+- **Business Logic Integration**: Active vs expired contract distinctions for real-world relevance
+- **Statistical Calculations**: Average rental prices with proper filtering and mathematical precision
+- **Functional Counting**: Pure functional approach to frequency analysis
+
+#### Advanced Reduce Pattern Mastery
+- **Data Structure Building**: `group_contracts_by_type()` using reduce to construct complex dictionaries
+- **List Accumulation Pattern**: Building grouped data `{'rental': [contracts], 'sale': [contracts]}`
+- **Optimization Algorithms**: `find_best_contract()` using reduce for maximum value finding
+- **Comparison Logic**: Contract value calculations (rental: monthly_rent × duration, sale: price)
+
+#### Error Resolution and Debugging Excellence
+- **Syntax Error Recognition**: Fixed function parameter definitions and variable scope issues
+- **Logic Debugging**: Systematic approach to short-circuit evaluation and type safety
+- **Step-by-Step Analysis**: Deep understanding of reduce execution flow and variable handling
+- **Business Logic Validation**: Ensuring calculations match real-world requirements
+
+#### Real-World Application Integration
+- **Contract Revenue Analysis**: Direct application to rental property business
+- **High-Value Filtering**: Investment decision support through functional data processing
+- **Summary Statistics**: Business intelligence through functional programming patterns
+- **Optimization Problems**: Finding best contracts using pure functional approaches
+
+### Zip Function (CH2-L10)
+Based on completed lesson with Python's built-in zip function for data correlation:
+
+#### Zip Function Mastery
+- **Data Correlation Concept**: Combining multiple iterables element-wise into tuples
+- **Document Processing Pipeline**: `zip(doc_names, doc_formats)` → `filter(valid_formats)` pattern
+- **Memory Efficiency**: Iterator-based processing with strategic `list()` conversions
+- **Length Handling**: Automatic stopping at shortest iterable length
+
+#### Zip + Filter Composition Pattern
+- **Function Chaining**: `list(filter(lambda pair: pair[1] in valid_formats, zip(...)))`
+- **Business Logic Integration**: Pairing filenames with formats for validation
+- **Predicate Composition**: Complex filtering with tuple element access
+- **Type Safety**: Short-circuit evaluation and proper tuple indexing
+
+#### Real-World Document Applications
+- **File Management**: Matching filenames with extensions and metadata
+- **Data Validation**: Checking correspondence between parallel datasets
+- **Configuration Mapping**: Pairing keys with values for dynamic setup
+- **Coordinate Processing**: Working with (x, y) pairs and geographic data
+
+### Higher-Order Functions Practice (CH2-L11)
+Based on completed ultimate challenge with one-liner functional composition:
+
+#### Advanced Function Composition Mastery
+- **One-Line Implementation**: Complex logic in single expression with readable formatting
+- **Pipeline Optimization**: Combine → Transform → Filter → Deduplicate flow
+- **Multi-Step Processing**: `set(filter(lambda, map(lambda, originals + backups)))`
+- **Elegant Code Structure**: Multi-line formatting maintaining single expression integrity
+
+#### Document Restoration System
+- **Case Normalization**: `.upper()` for consistent document comparison
+- **Corruption Detection**: `.isdigit()` for automated invalid file identification
+- **Data Merging**: Tuple concatenation for multiple source integration
+- **Deduplication Strategy**: Set-based approach for efficient duplicate removal
+
+#### Advanced Lambda Patterns
+- **Complex Predicates**: `lambda doc: not doc.isdigit()` for business logic
+- **Transformation Chains**: `lambda doc: doc.upper()` in composition context
+- **Predicate Composition**: Multiple conditions in functional filtering
+- **Type Conversion Strategy**: Strategic use of `set()` for both deduplication and result type
+
+#### Performance and Scalability Excellence
+- **Iterator Efficiency**: Lazy evaluation until final collection
+- **Single Pass Processing**: All operations combined into one traversal
+- **Memory Optimization**: No intermediate variables in composition
+- **O(1) Set Operations**: Efficient deduplication and membership testing
+
+#### Business Logic Integration Mastery
+- **Data Validation Systems**: Automated corruption detection algorithms
+- **Consistency Enforcement**: Case-insensitive document matching
+- **Reliability Patterns**: Robust handling of mixed data sources
+- **Scalability Design**: Pattern works for any number of document sources
+
+#### Functional Programming Pinnacle Achievement
+- **Complete Mastery**: Integration of all learned concepts (map, filter, reduce, zip, lambdas)
+- **Real-World Applications**: Document processing with business requirements
+- **Code Excellence**: Balance of conciseness, readability, and performance
+- **Pattern Recognition**: Ability to identify and implement optimal functional solutions
+
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
 - CH2-L4, L6, and L7 complete Python's built-in functional programming trilogy (map, filter, reduce)
 - L7-Reduce-Practice provides comprehensive hands-on practice with 5 progressive reduce exercises (25/25 tests passed)
+- CH2-L8 advances to imperative vs functional comparison with real estate contract analysis applications
+- CH2-L10 introduces zip function for data correlation and document processing pipelines
+- CH2-L11 represents functional programming pinnacle with one-liner higher-order function composition mastery
 - Some directories (06) contain only lesson content without implementations
 - `Lecture.md` provides Vietnamese language context on Python's limitations for functional programming
 - `learnlua.lua` file present but not part of main exercise structure
