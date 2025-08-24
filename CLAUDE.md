@@ -486,11 +486,51 @@ Based on completed lessons with perfect test scores and Gemini collaboration:
 - **Data Protection**: Ensuring original data structures remain untouched
 - **Functional Architecture**: Building reliable, predictable systems through pure function principles
 
+#### Pass by Reference Impurity (CH3-L6)
+Based on completed lesson reinforcing pure function concepts through negative examples:
+
+- **Impurity Recognition**: Understanding functions that modify inputs through reference passing
+- **Side Effect Identification**: Recognizing global variable modification as classic impurity pattern
+- **Pure vs Impure Contrast**: Direct comparison of `.copy()` usage vs direct input mutation
+- **Professional Development**: Understanding that pure function usage distinguishes good from great developers
+
+#### Input and Output Side Effects (CH3-L8)
+Based on completed lesson with I/O elimination implementation:
+
+- **I/O as Side Effects**: Understanding that even `print()` breaks function purity through console output
+- **Testing Challenges**: Recognition that I/O operations make functions untestable by automated test suites
+- **Pure Function Transformation**: Successfully converted `convert_case` from printing to returning values
+- **Text Processing Implementation**: Perfect case conversion (uppercase, lowercase, titlecase) with pure functions
+- **Error Handling Excellence**: Proper input validation and unsupported format handling
+
+#### I/O Containment Architecture (CH3-L9)
+Based on completed lesson with bilingual Vietnamese learning:
+
+- **I/O Sandwich Pattern**: Understanding Input → Pure Processing → Output architectural design
+- **Pragmatic Approach**: I/O as "dirty but necessary" - containment rather than elimination strategy
+- **System Architecture**: Clear separation between I/O operations and pure function cores
+- **Vietnamese Technical Mastery**: "Kiến trúc I/O Sandwich", "Lớp Đầu Vào/Xử Lý/Đầu Ra" terminology
+- **Practical Application**: Real-world program design with functional programming principles
+
+#### No-Op and Function Composition Mastery (CH3-L11)
+Based on completed lesson with advanced markdown processing implementation:
+
+- **No-Op Recognition**: Understanding that functions without return values are either useless or impure
+- **Hierarchical Function Design**: Perfect Document → Lines → Words processing architecture
+- **Functional Composition Excellence**: Masterful use of `map()`, `split()`, `join()`, `strip()` without `.replace()`
+- **Pure Function Implementation**: `remove_emphasis_from_word`, `remove_emphasis_from_line`, `remove_emphasis` functions
+- **Text Processing Mastery**: Markdown emphasis removal from *, **, *** patterns using pure functional approaches
+- **String Manipulation Patterns**: Perfect split → map → join pattern for text processing at multiple levels
+- **Vietnamese Technical Learning**: "Hoạt động vô dụng" (no-op), "hàm không trong sạch" terminology mastery
+
 #### Chapter 3 Achievement Metrics
-- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L5) with complete implementation success
-- **Pure Function Mastery**: Complete understanding of deterministic, side-effect-free functions
+- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L5), complete L8 I/O elimination, L11 functional composition
+- **Pure Function Mastery**: Complete understanding of deterministic, side-effect-free functions across all contexts
 - **Immutability Excellence**: Flawless handling of mutable data structures while maintaining purity
-- **Code Quality Evolution**: Writing higher quality, more predictable code through pure function principles
+- **I/O Architecture**: Advanced understanding of containment strategies and system design
+- **Function Composition**: Hierarchical processing systems using pure functional programming principles
+- **Bilingual Technical Mastery**: Vietnamese and English terminology for advanced pure function concepts
+- **Code Quality Evolution**: Writing higher quality, more predictable code through comprehensive pure function principles
 
 ## Project Structure Notes
 
