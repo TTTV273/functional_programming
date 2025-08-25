@@ -523,20 +523,64 @@ Based on completed lesson with advanced markdown processing implementation:
 - **String Manipulation Patterns**: Perfect split → map → join pattern for text processing at multiple levels
 - **Vietnamese Technical Learning**: "Hoạt động vô dụng" (no-op), "hàm không trong sạch" terminology mastery
 
+#### Memoization (CH3-L12)
+Based on completed lesson with perfect performance optimization implementation:
+
+- **Cache Hit/Miss Logic**: Mastery of dictionary-based memoization with efficient lookup patterns
+- **Performance Optimization**: Successfully balanced memory vs speed tradeoffs in functional programming
+- **Pure Function Memoization**: Applied deterministic behavior to enable safe result caching
+- **Immutability Preservation**: Perfect `.copy()` usage while implementing performance optimizations
+- **word_count_memo() Excellence**: 4/4 tests passed with cache optimization and input protection
+- **Vietnamese Translation**: Comprehensive bilingual learning with "ghi nhớ hóa" terminology mastery
+
+#### Referential Transparency (CH3-L13)
+Based on completed lesson with theoretical foundation mastery:
+
+- **Theoretical Foundation**: Understanding that makes memoization safe for pure functions
+- **Function Substitution**: Mastery of concept that function calls can be replaced by return values
+- **Optimization Guidelines**: Learned practical decisions for when to apply memoization vs avoid it
+- **Mathematical Principles**: Grasped why pure functions guarantee referential transparency
+- **Performance Considerations**: Understanding memory vs speed tradeoffs in optimization decisions
+- **Vietnamese Learning**: "Tính minh bạch tham chiếu" with technical concept reinforcement
+
+#### Pure Functions Practice (CH3-L15)
+Based on completed debugging excellence with Doc2Doc application:
+
+- **Purity Violation Debugging**: Fixed four different issues - three input mutations and one side effect
+- **Real-World Application**: Comprehensive pure function debugging skills in practical scenarios
+- **Immutability Patterns**: Applied `.copy()` techniques for dictionaries and lists to maintain input safety
+- **Side Effect Elimination**: Transformed `print()` functions to pure return-based implementations
+- **Debugging Excellence**: 6/6 tests passed with perfect input immutability and correctness verification
+- **Professional Development**: Advanced debugging skills distinguishing expert-level functional programming
+
+#### Pure Functions Practice - Date Sorting (CH3-L16)
+Based on completed higher-order function mastery with chronological sorting:
+
+- **Custom Sort Keys**: Implemented `date_to_sortable_format()` helper transforming MM-DD-YYYY to YYYY-MM-DD
+- **Higher-Order Functions**: Mastered `sorted(dates, key=transformation_function)` pattern perfectly
+- **String Manipulation**: Format conversion and parsing for proper chronological ordering
+- **Function vs Map Understanding**: Clear distinction between `sorted(key=...)` preservation vs `map()` transformation
+- **Date Processing**: Advanced datetime handling with format conversion for business applications
+- **Performance Patterns**: Efficient sorting without data mutation using pure transformation functions
+
 #### Chapter 3 Achievement Metrics
-- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L5), complete L8 I/O elimination, L11 functional composition
+- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L5), 4/4 tests (L12), 6/6 tests (L15), complete L8 I/O elimination, L11 functional composition, L16 date sorting
 - **Pure Function Mastery**: Complete understanding of deterministic, side-effect-free functions across all contexts
-- **Immutability Excellence**: Flawless handling of mutable data structures while maintaining purity
+- **Performance Optimization**: Advanced memoization and caching techniques with proper tradeoff analysis
+- **Immutability Excellence**: Flawless handling of mutable data structures while maintaining purity and optimization
 - **I/O Architecture**: Advanced understanding of containment strategies and system design
 - **Function Composition**: Hierarchical processing systems using pure functional programming principles
+- **Debugging Excellence**: Real-world application debugging with comprehensive purity violation identification
+- **Higher-Order Function Mastery**: Advanced `sorted()` with custom key functions and format transformations
 - **Bilingual Technical Mastery**: Vietnamese and English terminology for advanced pure function concepts
 - **Code Quality Evolution**: Writing higher quality, more predictable code through comprehensive pure function principles
 
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5, CH3-L6, CH3-L8, CH3-L9, CH3-L11, CH3-L12, CH3-L13, CH3-L15, CH3-L16) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
-- Complete Chapter 3: Pure Functions with perfect test scores and bilingual Vietnamese-English learning
+- Complete Chapter 3: Pure Functions with perfect test scores, performance optimization mastery, and bilingual Vietnamese-English learning
+- Advanced Chapter 3 Lessons: L12 Memoization (4/4 tests), L13 Referential Transparency, L15 Debugging Practice (6/6 tests), L16 Date Sorting mastery
 - CH2-L4, L6, and L7 complete Python's built-in functional programming trilogy (map, filter, reduce)
 - L7-Reduce-Practice provides comprehensive hands-on practice with 5 progressive reduce exercises (25/25 tests passed)
 - CH2-L8 advances to imperative vs functional comparison with real estate contract analysis applications
