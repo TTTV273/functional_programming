@@ -113,8 +113,11 @@ Based on completed Functions As Values lesson:
 - **Callback pattern**: Pass functions to handle specific behaviors
 
 #### String Formatting and Escape Characters
-- Use `\n` for newlines in formatted strings
-- Pattern: `f"```\n{content}\n```"` for markdown code blocks
+- Use `
+` for newlines in formatted strings
+- Pattern: `f"```
+{content}
+```"` for markdown code blocks
 - Clean two-line implementations: capture result, then format and return
 
 ### Anonymous Functions (CH2-L2)
@@ -205,7 +208,8 @@ Based on completed lesson with Python's built-in map function:
 - Part of functional programming trilogy: map, filter, reduce
 
 #### Split → Map → Join Pattern
-- **Split**: Break string into components with `.split("\n")`
+- **Split**: Break string into components with `.split("
+")`
 - **Map**: Apply transformation function to each component
 - **Join**: Reassemble components with `.join()` method
 - Essential pattern for string/text processing in functional style
@@ -244,7 +248,8 @@ Based on completed lesson with Python's built-in filter function:
 - Core functional programming tool alongside map and reduce
 
 #### Split → Filter → Join Pattern
-- **Split**: Break string into components with `.split("\n")`
+- **Split**: Break string into components with `.split("
+")`
 - **Filter**: Apply predicate function to select desired components
 - **Join**: Reassemble filtered components with `.join()` method
 - Essential pattern for selective text processing
@@ -577,10 +582,10 @@ Based on completed higher-order function mastery with chronological sorting:
 
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5, CH3-L6, CH3-L8, CH3-L9, CH3-L11, CH3-L12, CH3-L13, CH3-L15, CH3-L16, CH4-L1, CH4-L4, CH4-L8, CH4-L9, CH4-L12) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5, CH3-L6, CH3-L8, CH3-L9, CH3-L11, CH3-L12, CH3-L13, CH3-L15, CH3-L16, CH4-L1, CH4-L4, CH4-L8) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
 - Complete Chapter 3: Pure Functions with perfect test scores, performance optimization mastery, and bilingual Vietnamese-English learning  
-- Complete Chapter 4: Recursion with four distinct patterns mastered (L1, L4, L8, L12) - mathematical, data building, hybrid tree traversal, and file system traversal
+- Progressive Chapter 4: Recursion with three distinct patterns mastered (L1, L4, L8) - mathematical, data building, and hybrid tree traversal
 - Advanced Chapter 3 Lessons: L12 Memoization (4/4 tests), L13 Referential Transparency, L15 Debugging Practice (6/6 tests), L16 Date Sorting mastery
 - CH2-L4, L6, and L7 complete Python's built-in functional programming trilogy (map, filter, reduce)
 - L7-Reduce-Practice provides comprehensive hands-on practice with 5 progressive reduce exercises (25/25 tests passed)
@@ -634,20 +639,9 @@ Based on completed nested sum implementation:
 - **Performance Understanding**: Stack depth considerations, tail recursion patterns, memory efficiency
 - **Real-World Applications**: File systems, JSON parsing, tree algorithms, hierarchical data processing
 
-#### File System Tree Traversal Recursion (CH4-L12)
-Based on completed lesson with perfect file system implementation and comprehensive review:
-
-- **Advanced Hybrid Pattern Mastery**: Perfect evolution from L8-Nested Sum `isinstance(item, list)` to L12 `value == None` pattern
-- **Universal Tree Traversal Template**: Accumulator → Loop (breadth) → Type check → Base/recursive case → Return pattern mastery
-- **File Path Building Excellence**: f-string concatenation with proper "/" separators for hierarchical directory structures
-- **Edge Case Robustness**: Single files, empty directories, 5+ level deep nesting, Vietnamese Unicode filename support
-- **Real-World Doc2Doc Integration**: File system scanning for document management with Vietnamese business scenarios
-- **Pattern Transfer Excellence**: Identical hybrid approach successfully applied across different data structures (lists → dictionaries)
-
 #### Chapter 4 Achievement Metrics
-- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L4), 4/4 tests (L8), 4/4 tests (L12) = **21/21 total tests**
-- **Four Pattern Mastery**: Mathematical (L1), data building (L4), hybrid tree traversal (L8), file system traversal (L12)
-- **Vietnamese Business Integration**: Applied recursive algorithms to practical Doc2Doc, ERP, and e-commerce scenarios
-- **Edge Case Excellence**: Robust handling of empty inputs, extreme nesting, Unicode support, and boundary conditions
-- **Type Safety Evolution**: `isinstance()` mastery progressed from lists to dictionaries with `value == None` pattern recognition
-- **Lesson Review Mastery**: Comprehensive pattern analysis, edge case exploration, and business application validation
+- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L4), 4/4 tests (L8) across all recursion patterns
+- **Pattern Mastery**: Successfully implemented three distinct recursion paradigms with full understanding
+- **Vietnamese Business Integration**: Applied recursive algorithms to practical Vietnamese business scenarios
+- **Edge Case Excellence**: Robust handling of empty inputs, extreme nesting, and boundary conditions
+- **Type Safety**: Advanced `isinstance()` usage for dynamic decision-making in mixed data structures
