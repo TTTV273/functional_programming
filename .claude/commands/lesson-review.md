@@ -6,8 +6,12 @@ Follow these steps:
 3. Run test variations and explore edge cases to deepen understanding
 4. Extract key insights and identify reusable patterns from the solution
 5. Test solution with different input scenarios to verify robustness
-6. Connect lesson concepts to real-world Vietnamese business applications
-7. Update Neo4j memory with mastered concepts and practical insights
+6. Connect lesson concepts to general software development applications (avoid specific business references)
+7. Update Neo4j memory with LEARNING-SPECIFIC data only:
+   - Add lesson completion to Programming_Skills.observations
+   - Record new functional programming concepts mastered
+   - Note learning insights and pattern recognition improvements  
+   - STRICT RULE: Only add technical learning data, no personal context
 8. Update CLAUDE.md with key learning points and pattern connections
 9. Create a descriptive commit message summarizing lesson review insights and progress
 10. Push changes to GitHub to maintain learning progress backup

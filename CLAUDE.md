@@ -577,10 +577,10 @@ Based on completed higher-order function mastery with chronological sorting:
 
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5, CH3-L6, CH3-L8, CH3-L9, CH3-L11, CH3-L12, CH3-L13, CH3-L15, CH3-L16, CH4-L1, CH4-L4, CH4-L8, CH4-L9, CH4-L12) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5, CH3-L6, CH3-L8, CH3-L9, CH3-L11, CH3-L12, CH3-L13, CH3-L15, CH3-L16, CH4-L1, CH4-L4, CH4-L8, CH4-L9, CH4-L12, CH4-L13, CH4-L14) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
 - Complete Chapter 3: Pure Functions with perfect test scores, performance optimization mastery, and bilingual Vietnamese-English learning  
-- Complete Chapter 4: Recursion with four distinct patterns mastered (L1, L4, L8, L12) - mathematical, data building, hybrid tree traversal, and file system traversal
+- Complete Chapter 4: Recursion with five distinct patterns mastered (L1, L4, L8, L12, L13, L14) - mathematical, data building, hybrid tree traversal, file system traversal, and text processing
 - Advanced Chapter 3 Lessons: L12 Memoization (4/4 tests), L13 Referential Transparency, L15 Debugging Practice (6/6 tests), L16 Date Sorting mastery
 - CH2-L4, L6, and L7 complete Python's built-in functional programming trilogy (map, filter, reduce)
 - L7-Reduce-Practice provides comprehensive hands-on practice with 5 progressive reduce exercises (25/25 tests passed)
@@ -644,10 +644,32 @@ Based on completed lesson with perfect file system implementation and comprehens
 - **Real-World Doc2Doc Integration**: File system scanning for document management with Vietnamese business scenarios
 - **Pattern Transfer Excellence**: Identical hybrid approach successfully applied across different data structures (lists → dictionaries)
 
+#### Recursion Dangers and Debugging (CH4-L13)
+Based on completed lesson with comprehensive debugging mastery and infinite recursion prevention:
+
+- **Infinite Recursion Recognition**: Understanding how missing or incorrect base cases lead to stack overflow crashes
+- **Debugging Methodology Excellence**: Strategic print statement placement to trace recursive execution flow and identify problematic patterns
+- **Base Case Validation**: Critical importance of testing base cases first before implementing recursive logic
+- **Stack Overflow Prevention**: Recognition that infinite recursion consumes memory until program crashes
+- **Recursive Logic Debugging**: Step-by-step analysis of why base cases fail and how to fix logical errors
+- **Professional Development Patterns**: Understanding that recursive debugging requires different skills than iterative debugging
+
+#### Text Processing Recursion (CH4-L14)
+Based on completed lesson with perfect guided implementation and comprehensive review:
+
+- **Advanced Accumulator Pattern Mastery**: Perfect L4-Zipmap evolution applied to string processing with optimal value tracking
+- **String Processing Recursion Template**: `.split(maxsplit=1)` technique for clean first/remainder separation in text analysis
+- **Tie-Breaking Logic Excellence**: `>` operator ensures first occurrence wins behavior with equal-length word handling
+- **Edge Case Handling Mastery**: Empty strings, whitespace-only, Unicode support, punctuation inclusion, multiple spaces
+- **Step-by-Step Guided Learning**: 5-step recursive pattern successfully applied through structured TODO implementation
+- **Pure Recursion Achievement**: Zero loops, elegant string analysis with defensive programming integration
+
 #### Chapter 4 Achievement Metrics
-- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L4), 4/4 tests (L8), 4/4 tests (L12) = **21/21 total tests**
-- **Four Pattern Mastery**: Mathematical (L1), data building (L4), hybrid tree traversal (L8), file system traversal (L12)
-- **Vietnamese Business Integration**: Applied recursive algorithms to practical Doc2Doc, ERP, and e-commerce scenarios
-- **Edge Case Excellence**: Robust handling of empty inputs, extreme nesting, Unicode support, and boundary conditions
-- **Type Safety Evolution**: `isinstance()` mastery progressed from lists to dictionaries with `value == None` pattern recognition
-- **Lesson Review Mastery**: Comprehensive pattern analysis, edge case exploration, and business application validation
+- **Perfect Test Scores**: 6/6 tests (L1), 7/7 tests (L4), 4/4 tests (L8), 4/4 tests (L12), L13 debugging mastery, 6/6 tests (L14) = **27/27 implementation tests + debugging excellence**
+- **Six Pattern Mastery**: Mathematical (L1), data building (L4), hybrid tree traversal (L8), file system traversal (L12), debugging/safety (L13), text processing (L14)
+- **Vietnamese Business Integration**: Applied recursive algorithms to practical document management and text processing scenarios
+- **Edge Case Excellence**: Robust handling of empty inputs, extreme nesting, Unicode support, whitespace, and boundary conditions
+- **Type Safety Evolution**: `isinstance()` mastery progressed from lists to dictionaries to string processing patterns
+- **Debugging Excellence**: Comprehensive recursive debugging methodology with infinite recursion prevention mastery
+- **Lesson Review Mastery**: Comprehensive pattern analysis, edge case exploration, and general software development applications
+- **Bilingual Learning Excellence**: Vietnamese technical terminology integration with English implementation mastery
