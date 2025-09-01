@@ -6,7 +6,7 @@ Datetimes are infamously a [pain in the neck](https://gist.github.com/timvisee/f
 
 Fix the `sort_dates` function. It takes as input a list of dates in `"MONTH-DAY-YEAR"` format and returns a list of the dates sorted in ascending order.
 
-## Tips
+# Tips
 
 The built-in [`sorted`](https://docs.python.org/3/library/functions.html#sorted) function might work better here than the `.sort()` list method. Create a function to transform the dates to make them easier to compare with the `sorted` function.
 

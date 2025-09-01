@@ -577,7 +577,7 @@ Based on completed higher-order function mastery with chronological sorting:
 
 ## Project Structure Notes
 
-- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5, CH3-L6, CH3-L8, CH3-L9, CH3-L11, CH3-L12, CH3-L13, CH3-L15, CH3-L16, CH4-L1, CH4-L4, CH4-L8, CH4-L9, CH4-L12, CH4-L13, CH4-L14, CH4-L15, CH5-L1) and lesson materials
+- Repository contains mix of completed exercises (01, 04, 05, 07, CH2-L1, CH2-L2, CH2-L3, CH2-L4, CH2-L6, CH2-L7, L7-Reduce-Practice, CH2-L8, CH2-L10, CH2-L11, CH3-L1, CH3-L2, CH3-L5, CH3-L6, CH3-L8, CH3-L9, CH3-L11, CH3-L12, CH3-L13, CH3-L15, CH3-L16, CH4-L1, CH4-L4, CH4-L8, CH4-L9, CH4-L12, CH4-L13, CH4-L14, CH4-L15, CH5-L1, CH5-L5, CH5-L7) and lesson materials
 - Complete Chapter 2: First-Class Functions with all lessons implemented and tested
 - Complete Chapter 3: Pure Functions with perfect test scores, performance optimization mastery, and bilingual Vietnamese-English learning  
 - Complete Chapter 4: Recursion with seven distinct patterns mastered (L1, L4, L8, L12, L13, L14, L15) - mathematical, data building, hybrid tree traversal, file system traversal, debugging/safety, text processing, and tree search
@@ -686,8 +686,8 @@ Based on completed lesson with perfect tree traversal implementation and compreh
 - **Lesson Review Mastery**: Comprehensive pattern analysis, edge case exploration, and general software development applications
 - **Bilingual Learning Excellence**: Vietnamese technical terminology integration with English implementation mastery
 
-### Function Transformations (CH5-L1)
-Based on completed lesson with perfect logging system implementation:
+### Function Transformations (CH5-L1, L5, L7)
+Based on completed lessons with perfect implementations and comprehensive pattern mastery:
 
 #### Function Transformation Fundamentals (CH5-L1)
 Based on completed lesson with perfect Doc2Doc logging system implementation:
@@ -703,11 +703,93 @@ Based on completed lesson with perfect Doc2Doc logging system implementation:
 - **Edge Case Robustness**: Perfect handling of empty strings, Unicode characters, special symbols, and lambda formatters
 - **Memory Isolation Mastery**: Multiple logger instances maintain separate closures preventing state interference
 
+#### Function Transformation Motivation (CH5-L5)
+Based on completed lesson explaining practical applications of function transformations:
+
+- **Code Reusability Mastery**: Single `formatter` function creates unlimited specialized text formatters through pattern-based templates
+- **Dynamic Function Creation**: Runtime generation of specialized functions based on template patterns with `{}` placeholder replacement
+- **Character-by-Character Processing**: Advanced string scanning with `pattern[i:i+2] == '{}'` for placeholder detection and replacement
+- **Function Composition Patterns**: Connecting function transformation concepts to practical business document formatting systems
+- **Bilingual Concept Reinforcement**: Vietnamese 'Tái sử dụng code' and 'Biến đổi hàm' terminology integrated with English technical implementation
+- **Closure Preview Understanding**: Recognition that 90% of function transformations create closures for practical applications
+
+#### Function Transformations Practice (CH5-L7)
+Based on completed boot.dev lesson with perfect command-line interface implementation:
+
+- **Command Pattern Implementation**: Advanced `get_filter_cmd` function creating dynamic command-line style interfaces with option routing
+- **Default Parameter Mastery**: Perfect `option="--one"` syntax providing sensible default behavior for command interfaces
+- **Function Composition Excellence**: `--three` option demonstrating sequential function application (filter_one then filter_two)
+- **Dynamic Option Handling**: Clean if/elif/else structure routing `--one`, `--two`, `--three` options to appropriate filter functions
+- **Exception Handling Integration**: Robust error handling with `Exception("invalid option")` for invalid command validation
+- **Advanced Closure Applications**: Inner function capturing multiple filter functions in closure scope for dynamic behavior control
+- **Boot.dev Structure Mastery**: Following official lesson requirements with step-by-step guided implementation approach
+- **Vietnamese Business Context**: Practical filtering system for document processing with flexible command-line interface design
+
 #### Chapter 5 Achievement Metrics
-- **Perfect Implementation**: Complete function transformation with closure-based logging system
-- **Advanced Pattern Recognition**: Evolution from CH2 parameter passing to CH5 function factory creation
-- **Real-World Integration**: Professional logging system architecture using functional programming principles  
-- **Code Quality Excellence**: Clean implementation with proper separation of formatting logic and logging behavior
-- **Comprehensive Edge Case Testing**: Validated closure independence, memory isolation, and custom formatter integration
-- **Bilingual Learning Excellence**: Vietnamese 'Biến đổi hàm' terminology mastered alongside technical implementation
-- **General Application Understanding**: Connected patterns to middleware systems, plugin architectures, and configuration-based services
+- **Perfect Implementation Scores**: CH5-L1 (logging system), CH5-L5 (formatter system), CH5-L7 (command interface) all completed with perfect test results
+- **Function Factory Evolution**: Progressive mastery from basic transformations → practical applications → advanced command patterns
+- **Advanced Closure Patterns**: Multiple levels of closure complexity from single parameter capture to multi-function composition
+- **Real-World Integration**: Professional system architectures using functional programming principles across logging, formatting, and command systems
+- **Command-Line Interface Design**: Dynamic option handling with default parameters and function composition for flexible user interfaces
+- **Bilingual Learning Excellence**: Vietnamese terminology integration with English technical implementation across all lessons
+- **Pattern Recognition Mastery**: Clear understanding of when and why to use function transformations in practical applications
+- **General Application Understanding**: Connected patterns to middleware systems, plugin architectures, configuration-based services, and command-line tools
+### Closures (CH6-L1, L4, L5)
+Based on completed lessons with perfect test scores and progressive closure complexity mastery:
+
+#### Closure Fundamentals (CH6-L1)
+Based on completed lesson with perfect word count aggregator implementation:
+
+- **Core Closure Concept**: Functions that reference variables from outside their own scope, bundling function definition with environment
+- **Persistent State Management**: Functions that "keep track of values" from where they were defined, executed anywhere later
+- **nonlocal Keyword Mastery**: Required for modifying variables from enclosing scope when reassigning immutable values
+- **Immutable Closure Pattern**: `count += len(word.split())` requires `nonlocal count` for integer reassignment
+- **Function Factory Excellence**: `word_count_aggregator()` returns stateful functions that remember running totals
+- **Real-World Applications**: Document processing systems that maintain cumulative statistics across multiple calls
+- **Perfect Implementation**: 3/3 tests passed with proper state management and encapsulation
+
+#### Mutable Closures Without nonlocal (CH6-L4)
+Based on completed lesson with perfect document collection implementation:
+
+- **Mutable vs Immutable Distinction**: Lists are mutable - content modification doesn't require `nonlocal` keyword
+- **Data Protection Mastery**: Perfect `.copy()` usage to protect original input parameters from modification
+- **Collection Management Pattern**: Dynamic document collections that grow over time while preserving originals
+- **Append Pattern Excellence**: `doc_copy.append(new_doc); return doc_copy` two-line implementation for proper return handling
+- **Edge Case Robustness**: Handles empty lists, no additions, and multiple sequential calls perfectly
+- **Method Return Understanding**: `.append()` returns `None`, not the updated list - critical debugging insight
+- **Perfect Implementation**: 6/6 tests passed with complete input protection and collection management
+
+#### Advanced Nested Dictionary Closures (CH6-L5)
+Based on completed lesson with perfect CSS styling system implementation:
+
+- **Deep Copy Mastery**: `copy.deepcopy()` essential for nested dictionary protection vs shallow `.copy()` limitations
+- **Shallow vs Deep Copy Understanding**: Nested dictionaries require deep copying to prevent original modification through shared references
+- **Two-Level Dictionary Access**: Perfect `styles[selector][property] = value` pattern for hierarchical data structures
+- **Conditional Logic Excellence**: Unified handling of both new and existing selectors with `if selector not in styles_dict:`
+- **Dynamic Structure Creation**: Creating new selectors on-demand with `styles[selector] = {}` initialization pattern
+- **CSS Styling System**: Real-world application managing stylesheet modifications with complete state protection
+- **Problem-Solving Growth**: Overcame dictionary vs list indexing confusion, mastered syntax error resolution independently
+- **Perfect Implementation**: 3/3 tests passed with advanced conditional logic and nested data structure management
+
+#### Closure Evolution Mastery
+- **L1-Immutable Integers**: Required `nonlocal` for variable reassignment (`count += value`)
+- **L4-Mutable Lists**: No `nonlocal` needed for content modification (`list.append()`)
+- **L5-Nested Dictionaries**: Deep copying + conditional logic for complex hierarchical structures
+
+#### Advanced Closure Applications
+- **Stateful Function Creation**: Building functions that maintain persistent state across multiple invocations
+- **Data Protection Patterns**: Comprehensive understanding of when to use `.copy()` vs `copy.deepcopy()`
+- **Dynamic System Architecture**: CSS styling systems, document collections, statistical aggregators
+- **Memory Management**: Independent closure instances with isolated state preventing interference
+- **Real-World Integration**: Professional applications in configuration management, data processing, and system utilities
+
+#### Chapter 6 Achievement Metrics
+- **Perfect Test Scores**: 3/3 tests (L1), 6/6 tests (L4), 3/3 tests (L5) = **12/12 total closure mastery**
+- **Three Distinct Patterns**: Immutable closures, mutable closures, nested dictionary closures
+- **Data Protection Excellence**: Mastery of shallow copy, deep copy, and input immutability patterns
+- **Advanced Problem-Solving**: Independent debugging of syntax errors, logic flow, and data structure access
+- **Bilingual Learning**: Vietnamese and English technical terminology for closure concepts
+- **Progressive Complexity**: From simple counters to complex hierarchical data management systems
+
+- Just guide me to edit code, don't do it for me, I'm learning. You can guide me by comment in my code step by step
+- You have to ask me before create main.py and main_test.py, we must follow lesson and assignment from boot.dev
